@@ -1,4 +1,4 @@
-package programmers.LevelTest;
+package programmers.leveltest;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,4 +1,4 @@
-package programmers.SkillCheckTest.Level1;
+package programmers.skillchecktest.Level1;
 
 // pass
 

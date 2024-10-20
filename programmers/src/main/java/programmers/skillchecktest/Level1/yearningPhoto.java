@@ -1,4 +1,4 @@
-package programmers.SkillCheckTest.Level1;
+package programmers.skillchecktest.Level1;
 
 // 사진들을 보며 추억에 젖어 있던 루는 사진별로 추억 점수를 매길려고 합니다. 사진 속에 나오는 인물의 그리움 점수를 모두 합산한 값이 해당 사진의 추억 점수가 됩니다.
 // 예를 들어 사진 속 인물의 이름이 ["may", "kein", "kain"]이고
@@ -13,11 +13,7 @@ package programmers.SkillCheckTest.Level1;
 // failed
 // 풀긴 풀었음
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
 public class yearningPhoto {
