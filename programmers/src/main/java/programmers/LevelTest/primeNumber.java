@@ -7,9 +7,6 @@ package programmers.LevelTest;
 // nums 에 들어있는 숫자의 개수는 3개 이상 50개 이하입니다.
 // nums 의 각 원소는 1 이상 1,000 이하의 자연수이며, 중복된 숫자가 들어있지 않습니다.
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class primeNumber {
 	public static void main(String[] args) throws Exception {
 

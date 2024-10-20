@@ -19,6 +19,7 @@ package programmers.SkillCheckTest.Level1;
 // 출력 형식
 // 원래의 비밀지도를 해독하여 '#', 공백으로 구성된 문자열 배열로 출력하라.
 // 답은 나오는데  에러뜸
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

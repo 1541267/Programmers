@@ -22,8 +22,8 @@ import java.util.Arrays;
 
 public class yearningPhoto {
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		// BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		// BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		String[] names = new String[] {"kali", "mari", "don"};
 		// String[] names = new String[] {"may", "kein", "kain", "radi"};

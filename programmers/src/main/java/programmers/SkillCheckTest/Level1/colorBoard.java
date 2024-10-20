@@ -10,7 +10,6 @@ public class colorBoard {
 		String[][] board = new String[][] {{"blue", "red", "orange", "red"},
 			{"red", "red", "blue", "orange"}, {"blue", "orange", "red", "red"},
 			{"orange", "orange", "red", "blue"}};
-		int n;
 
 		int h = 1;
 		int w = 1;
@@ -19,8 +18,6 @@ public class colorBoard {
 	}
 
 	public static int solution(String[][] board, int h, int w) {
-
-		String selectedColor = board[h][w];
 
 		boolean[][] checked = new boolean[board.length][board[0].length];
 		return dfs(board, checked, h, w);

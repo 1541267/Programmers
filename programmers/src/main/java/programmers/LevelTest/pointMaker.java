@@ -35,7 +35,7 @@ public class pointMaker {
 
 		for (int a = 0; a * k <= d; a++) {
 
-			long maxDistance = (long)Math.sqrt(((long)d * d) - ((long)a*k)*(a*k)) / k;
+			long maxDistance = (long)Math.sqrt(((long)d * d) - ((long)a*k)*((long)a *k)) / k;
 
 			count += (maxDistance + 1);
 
@@ -43,5 +43,4 @@ public class pointMaker {
 		return count;
 	}
 }
-		// long max_b = (long) Math.sqrt((long) d * d - (long) (a * k) * (a * k)) / k;
 
