@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class number {
+public class cutAndSort {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
@@ -39,7 +39,6 @@ public class number {
 		for (int i = 0; i < array.length; i++) {
 			array[i] = Integer.parseInt(st.nextToken());
 		}
-		;
 
 		ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 		String line;
