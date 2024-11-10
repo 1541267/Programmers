@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 // "12321"	"42531"	"321"
 // "5525"	"1255"	"552"
 
-class numberMate {
+class NumberMate {
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

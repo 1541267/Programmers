@@ -7,11 +7,10 @@ public class calculator {
 
 		int count = 0;
 		double sum = 0.0;
-		while (count < 25) {
+		while (count < 10) {
 
 			sum += Double.parseDouble(br.readLine());
 
-			
 			count++;
 		}
 

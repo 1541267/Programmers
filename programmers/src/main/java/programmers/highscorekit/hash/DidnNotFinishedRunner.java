@@ -53,7 +53,7 @@ import java.util.StringTokenizer;
 // 전체 복잡도:
 // O(n+m+k).
 
-public class didnNotFinishedRunner {
+public class DidnNotFinishedRunner {
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

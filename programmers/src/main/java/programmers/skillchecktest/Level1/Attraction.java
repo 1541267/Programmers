@@ -2,7 +2,7 @@ package programmers.skillchecktest.Level1;
 
 // pass
 
-public class attraction {
+public class Attraction {
 	public static void main(String[] args) {
 		int price = 3;
 		int money = 20;

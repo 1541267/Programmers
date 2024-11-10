@@ -36,7 +36,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-public class sumNumbers {
+public class SumNumbers {
 	public static void main(String[] args) {
 
 		// int[] numbers = {0, 0, 0, 0};

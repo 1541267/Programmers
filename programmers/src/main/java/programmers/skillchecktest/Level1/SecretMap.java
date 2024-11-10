@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class secretMap {
+public class SecretMap {
 	public static void main(String[] args) {
 		int n = 5;
 		int[] arr1 = {9, 20, 28, 18, 11};

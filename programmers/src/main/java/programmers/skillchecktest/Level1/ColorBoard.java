@@ -4,7 +4,7 @@ import java.util.Objects;
 
 // 시간 부족
 
-public class colorBoard {
+public class ColorBoard {
 	public static void main(String[] args) {
 
 		String[][] board = new String[][] {{"blue", "red", "orange", "red"},

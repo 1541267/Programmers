@@ -6,7 +6,7 @@ import java.util.Stack;
 // => ( 문자로 열렸으면 반드시 ) 닫혀야 하는 첸크
 // stack 구조를 사용한 체크
 
-public class stackTest {
+public class StackTest {
 
 	public static void main(String[] args) {
 		System.out.println(solution("()("));

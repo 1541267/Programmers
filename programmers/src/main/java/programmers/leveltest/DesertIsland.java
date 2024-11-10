@@ -23,7 +23,7 @@ import java.util.List;
 // ["XXX","XXX","XXX"]	[-1]
 // DFS or BFS 사용 문제, DFS 검색 후 풀어봄
 
-public class desertIsland {
+public class DesertIsland {
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

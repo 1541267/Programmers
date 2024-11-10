@@ -23,7 +23,7 @@ import java.util.List;
 // 입출력 예 설명
 // 이 과학자가 발표한 논문의 수는 5편이고, 그중 3편의 논문은 3회 이상 인용되었습니다. 그리고 나머지 2편의 논문은 3회 이하 인용되었기 때문에 이 과학자의 H-Index는 3입니다.
 
-public class hIndex {
+public class HIndex {
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -68,14 +68,14 @@ public class hIndex {
 // 	public static int solution(int[] citations) {
 //
 // 		Arrays.sort(citations);
-// 		int hIndex = citations.length;
+// 		int HIndex = citations.length;
 //
 // 		System.out.println(Arrays.toString(citations));
-// 		for(int i = 0 ; i < hIndex ; i++) {
-// 			if(citations[i] >= hIndex) {
-// 				return hIndex;
+// 		for(int i = 0 ; i < HIndex ; i++) {
+// 			if(citations[i] >= HIndex) {
+// 				return HIndex;
 // 			} else {
-// 				hIndex--;
+// 				HIndex--;
 // 			}
 // 		}
 // 		return 0;

@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 // 2	4	6
 // 1	5	26
 
-public class pointMaker {
+public class PointMaker {
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

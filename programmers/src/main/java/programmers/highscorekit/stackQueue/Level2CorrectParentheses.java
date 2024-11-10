@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class level2CorrectParentheses {
+public class Level2CorrectParentheses {
 
 	public static void main(String[] args) throws IOException {
 

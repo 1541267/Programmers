@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 // "01033334444"	"*******4444"
 // "027778888"	"*****8888"
 
-public class secretPhoneNumber {
+public class SecretPhoneNumber {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		// BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
