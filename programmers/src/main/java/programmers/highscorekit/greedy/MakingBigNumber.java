@@ -38,7 +38,10 @@ public class MakingBigNumber {
 		StringBuilder stb = new StringBuilder();
 
 		int deleteCount = 0;
-
+		
+		// 반복문 한번에 비교,삭제 해결되도록 생각만 하다가 
+		// 검색 후 원리 이해, 코드 더 이해해보기
+		
 		for (char c : number.toCharArray()) {
 			while (deleteCount < k && !stb.isEmpty() && stb.charAt(stb.length() -1) < c) {
 				stb.deleteCharAt(stb.length() -1);
