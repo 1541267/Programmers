@@ -77,7 +77,6 @@ public class DidnNotFinishedRunner {
 		System.out.println(solution(participant, completion));
 	}
 
-	//  통과는 되는데 시간이 오래 걸림
 	public static String solution(String[] participant, String[] completion) {
 
 		Map<String, Integer> participants = new HashMap<>();
