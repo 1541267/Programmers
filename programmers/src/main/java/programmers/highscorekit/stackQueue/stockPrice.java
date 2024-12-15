@@ -32,20 +32,18 @@ public class stockPrice {
 		int[] result = new int[n];
 		Stack<Integer> priceList = new Stack<>();
 
-		for(int i = 0 ; i < n ; i++) {
-			while(!priceList.isEmpty() && prices[priceList.peek()] > prices[i]) {
+		for (int i = 0; i < n; i++) {
+			while (!priceList.isEmpty() && prices[priceList.peek()] > prices[i]) {
 				int index = priceList.pop();
 				result[index] = i - index;
 			}
 			priceList.push(i);
 		}
-		// System.out.println(priceList);
 
-		while(!priceList.isEmpty()) {
+		while (!priceList.isEmpty()) {
 			int index = priceList.pop();
 			result[index] = n - 1 - index;
 		}
-
 		return result;
 	}
 }
