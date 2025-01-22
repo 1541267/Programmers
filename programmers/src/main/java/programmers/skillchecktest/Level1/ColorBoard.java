@@ -2,7 +2,7 @@ package programmers.skillchecktest.Level1;
 
 import java.util.Objects;
 
-// 시간 부족
+// TODO 시간 부족
 
 public class ColorBoard {
 	public static void main(String[] args) {

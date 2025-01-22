@@ -28,7 +28,7 @@ package programmers.skillchecktest.Level1;
 // 9 = 2 + 7 입니다.
 // 12 = 5 + 7 입니다.
 // 따라서 [2,5,7,9,12] 를 return 해야 합니다.
-// 답은 맞게 나오는데 일부 테스트 케이스 에러.. 이유는?\
+// TODO 답은 맞게 나오는데 일부 테스트 케이스 에러.. 이유는?\
 
 
 import java.util.Arrays;

@@ -18,6 +18,7 @@ package programmers.skillchecktest.Level1;
 // [1,4,6]을 이용해서 11을 만들 수 있습니다.
 // [2,4,7]을 이용해서 13을 만들 수 있습니다.
 // [4,6,7]을 이용해서 17을 만들 수 있습니다.
+// 정답
 
 public class PrimeNumber {
 	public static void main(String[] args) {

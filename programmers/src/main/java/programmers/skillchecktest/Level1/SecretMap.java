@@ -18,7 +18,7 @@ package programmers.skillchecktest.Level1;
 // 정수 배열의 각 원소 x를 이진수로 변환했을 때의 길이는 n 이하이다. 즉, 0 ≦ x ≦ 2n - 1을 만족한다.
 // 출력 형식
 // 원래의 비밀지도를 해독하여 '#', 공백으로 구성된 문자열 배열로 출력하라.
-// 답은 나오는데  에러뜸
+// TODO 답은 나오는데  에러뜸
 
 import java.util.ArrayList;
 import java.util.Arrays;
