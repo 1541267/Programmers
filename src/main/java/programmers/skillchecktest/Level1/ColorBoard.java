@@ -22,7 +22,6 @@ public class ColorBoard {
 		boolean[][] checked = new boolean[board.length][board[0].length];
 		return dfs(board, checked, h, w);
 
-
 	}
 
 	public static int dfs(String[][] board, boolean[][] checked, int h, int w) {
@@ -40,11 +39,9 @@ public class ColorBoard {
 			int nh = h * dh[i];
 			int nw = w * dw[i];
 
-
-
 			for (int j = 0; j < cols; j++) {
 				if (nh >= 0 && nw >= 0 && Objects.equals(board[h][w], board[nh][nw])) {
-					if(!checked[nh][nw]) {
+					if (!checked[nh][nw]) {
 
 						count++;
 					}
