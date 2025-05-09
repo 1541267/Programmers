@@ -18,7 +18,7 @@ package programmers.highscorekit.stackQueue;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class stockPrice {
+public class StockPrice {
 	public static void main(String[] args) {
 
 		int[] prices = new int[] {1, 2, 3, 2, 3};
