@@ -1,16 +1,11 @@
 package programmers.highscorekit.hash;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 /*
+https://school.programmers.co.kr/learn/courses/30/lessons/42579?language=java
 코딩테스트 고득점 Kit / 해시 / 베스트앨범
 문제 설명
 스트리밍 사이트에서 장르 별로 가장 많이 재생된 노래를 두 개씩 모아 베스트 앨범을 출시하려 합니다. 노래는 고유 번호로 구분하며, 노래를 수록하는 기준은 다음과 같습니다.
@@ -55,7 +50,12 @@ public class BestAlbum {
 
 	}
 
-	// 한 번의 순회로
+	// 한 번의 순회로 장르 별 총 재생 회수 map 저장 & 해당 장르의 값과 인덱스를 저장하는데
+	// 길이 4의 배열로 저장(재생 값1, 인덱스, 재생 값2, 인덱스), 매 인덱스 마다 비교
+	// 장르 별 총 재생 회수 map의 values 기준으로 key값을 내림차 정렬
+	// 정렬 된 장르 순서대로 해당 장르에 저장해 둔 배열에서 값과 인덱스를 사용 해 result list에 index를 저장
+	// -> 만약 해당 장르의 값이 1개 이면 1개만 사용
+	// result 반환
 	private static List<Integer> solution(String[] g, int[] p) {
 
 		if (g.length == 1) {
@@ -90,7 +90,7 @@ public class BestAlbum {
 
 		for (String genre : sortedGenres) {
 			result.add(genrePlayArrMap.get(genre)[1]);
-			if(genrePlayArrMap.get(genre)[3] != -1) {
+			if (genrePlayArrMap.get(genre)[3] != -1) {
 				result.add(genrePlayArrMap.get(genre)[3]);
 			}
 		}
@@ -98,8 +98,12 @@ public class BestAlbum {
 	}
 }
 // 내가 푼 방법
-// 한 번의 순회로 장르별 총 재생 수 & 각 값의 인덱스 수집
-
+// 한 번의 순회로 장르별 총 재생 수 & 각 장르의 모든 인덱스를 배열로 수집
+// 장르를 총 재생 수 기준으로 list<mapentry>를 사용해 내림차 정렬
+// 정렬 된 장르 순서대로 Map을 체크하면서 해당 장르의 인덱스로 play 배열에서 확인 후 내림차순 정렬, 값이 같을 시 인덱스 오름차순 정렬
+// 그리고 정렬 된 배열에서 두 인덱스를 result 리스트에 저장
+// 모든 장르 체크 후 result 반환
+// 
 // 	private static List<Integer> solution(String[] g, int[] p) {
 //
 // 		if (g.length == 1) {
