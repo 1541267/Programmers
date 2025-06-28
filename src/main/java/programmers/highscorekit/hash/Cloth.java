@@ -2,6 +2,7 @@ package programmers.highscorekit.hash;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -61,25 +62,69 @@ public class Cloth {
 	}
 
 	private static int solution(String[][] c) {
-		System.out.println("==========================================================");
-		Map<String, Long> map = Arrays.stream(c).collect(Collectors.groupingBy(
-			s -> s[1],
-			Collectors.counting()
-		));
+		HashMap<String, Integer> map = new HashMap<>();
 
-		List<Long> list = new ArrayList<>(map.values());
+		for (String[] s : c) {
+			map.put(s[1], map.getOrDefault(s[1], 0) + 1);
+		}
 
-		System.out.println("map = " + map);
+		List<Integer> list = new ArrayList<>(map.values());
 
 		if (map.size() == 1) {
 			return Math.toIntExact(list.get(0));
 		} else {
 
-			long a = 1;
-			for (Long l : list) {
+			int a = 1;
+			for (int l : list) {
 				a *= l + 1;
 			}
-			return (int)a - 1;
+			return a - 1;
 		}
 	}
 }
+// 	private static int solution(String[][] c) {
+// 		HashMap<String, Integer> map = new HashMap<>();
+//
+// 		for (String[] s : c) {
+// 			map.put(s[1], map.getOrDefault(s[1], 0) + 1);
+// 		}
+//
+// 		List<Integer> list = new ArrayList<>(map.values());
+//
+// 		if (map.size() == 1) {
+// 			return Math.toIntExact(list.get(0));
+// 		} else {
+//
+// 			int a = 1;
+// 			for (int l : list) {
+// 				a *= l + 1;
+// 			}
+// 			return a - 1;
+// 		}
+// 	}
+// }
+
+// 처음 푼 것 (스트림 사용)
+// 	private static int solution(String[][] c) {
+// 		System.out.println("==========================================================");
+// 		Map<String, Long> map = Arrays.stream(c).collect(Collectors.groupingBy(
+// 			s -> s[1],
+// 			Collectors.counting()
+// 		));
+//
+// 		List<Long> list = new ArrayList<>(map.values());
+//
+// 		System.out.println("map = " + map);
+//
+// 		if (map.size() == 1) {
+// 			return Math.toIntExact(list.get(0));
+// 		} else {
+//
+// 			long a = 1;
+// 			for (Long l : list) {
+// 				a *= l + 1;
+// 			}
+// 			return (int)a - 1;
+// 		}
+// 	}
+// }
