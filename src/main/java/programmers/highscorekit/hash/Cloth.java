@@ -1,13 +1,11 @@
 package programmers.highscorekit.hash;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 /*
+https://school.programmers.co.kr/learn/courses/30/lessons/42578?language=java
 코딩테스트 고득점 Kit / 해시 / 의상
 코니는 매일 다른 옷을 조합하여 입는것을 좋아합니다.
 
