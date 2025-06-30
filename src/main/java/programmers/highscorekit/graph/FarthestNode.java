@@ -7,7 +7,7 @@ import java.util.List;
 
 /*
 https://school.programmers.co.kr/learn/courses/30/lessons/49189?language=java
-코딩테스트 연습 / 그래프 / 가장 먼 노드
+코딩테스트 고득점 Kit  / 그래프 / 가장 먼 노드
 도움말
 문제 설명
 n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까지 번호가 적혀있습니다. 1번 노드에서 가장 멀리 떨어진 노드의 갯수를 구하려고 합니다. 가장 멀리 떨어진 노드란 최단경로로 이동했을 때 간선의 개수가 가장 많은 노드들을 의미합니다.
