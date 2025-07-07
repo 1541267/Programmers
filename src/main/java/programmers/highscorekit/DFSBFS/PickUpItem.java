@@ -94,11 +94,11 @@ public class PickUpItem {
 
 				double mx = x + 0.5;
 
-				if (isInsideEdge(r, i, mx, y1)) {
+				if (!isInsideEdge(r, i, mx, y1)) {
 					edgeSet.add(x + "," + y1 + "," + (x + 1) + "," + y1);
 					edgeSet.add((x + 1) + "," + y1 + "," + x + "," + y1);
 				}
-				if (isInsideEdge(r, i, mx, y2)) {
+				if (!isInsideEdge(r, i, mx, y2)) {
 					edgeSet.add(x + "," + y2 + "," + (x + 1) + "," + y2);
 					edgeSet.add((x + 1) + "," + y2 + "," + x + "," + y2);
 				}
@@ -108,11 +108,11 @@ public class PickUpItem {
 			for (int y = y1; y < y2; y++) {
 				double my = y + 0.5;
 
-				if (isInsideEdge(r, i, x1, my)) {
+				if (!isInsideEdge(r, i, x1, my)) {
 					edgeSet.add(x1 + "," + y + "," + x1 + "," + (y + 1));
 					edgeSet.add(x1 + "," + (y + 1) + "," + x1 + "," + y);
 				}
-				if (isInsideEdge(r, i, x2, my)) {
+				if (!isInsideEdge(r, i, x2, my)) {
 					edgeSet.add(x2 + "," + y + "," + x2 + "," + (y + 1));
 					edgeSet.add(x2 + "," + (y + 1) + "," + x2 + "," + y);
 				}
@@ -126,9 +126,9 @@ public class PickUpItem {
 
 		for (int j = 0; j < r.length; j++) {
 			if (j == idx) continue;
-			if (r[j][0] < mx && mx < r[j][2] && r[j][1] < my && my < r[j][3]) return false;
+			if (r[j][0] < mx && mx < r[j][2] && r[j][1] < my && my < r[j][3]) return true;
 		}
-		return true;
+		return false;
 	}
 
 	private static int bfs(int cX, int cY, int xMax, int yMax, int iX, int iY, HashSet<String> edgeSet) {
