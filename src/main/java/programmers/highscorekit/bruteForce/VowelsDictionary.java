@@ -1,4 +1,4 @@
-package programmers.highscorekit.greedy;
+package programmers.highscorekit.bruteForce;
 
 /*
 https://school.programmers.co.kr/learn/courses/30/lessons/84512?language=java
@@ -34,12 +34,14 @@ word	result
 "EIO"는 1189번째 단어입니다.
 */
 
-// 5진법으로 계산, 자리수에 따라 추가로 가지 수 + -> ex) I 면 Ixxxx -> 뒤 번호의 개수 * I 번호
-// 처음 푼 방법은 HashMap(조회 오버헤드 발생) + Math.pow() 사용, 개선은 배열로 사용해 해시 조회 오버헤드를 없앰
-// 해시 조회: hashCode() 계산 -> 버킷 인덱스 계산 -> equals() 비교 -> 값 반환
-// -> 평균적으로 O(1)이지만 해시 충돌이 많거나 리사이징 발생하면 최악은 O(n)
-// -> 배열을 사용 해 바로 인덱스로 접근, 추가 연산 없이 바로 값 비교
-// -> pow()는 double 연산, 지수연산을 처리하는 복잡한 알고리즘으로 인해, 메서드 호출 비용 + 연산 비용이 합쳐서 무거움
+/*
+5진법으로 계산, 자리수에 따라 추가로 가지 수 + -> ex) I 면 Ixxxx -> 뒤 번호의 개수 * I 번호
+처음 푼 방법은 HashMap(조회 오버헤드 발생) + Math.pow() 사용, 개선은 배열로 사용해 해시 조회 오버헤드를 없앰
+해시 조회: hashCode() 계산 -> 버킷 인덱스 계산 -> equals() 비교 -> 값 반환
+-> 평균적으로 O(1)이지만 해시 충돌이 많거나 리사이징 발생하면 최악은 O(n)
+-> 배열을 사용 해 바로 인덱스로 접근, 추가 연산 없이 바로 값 비교
+-> pow()는 double 연산, 지수연산을 처리하는 복잡한 알고리즘으로 인해, 메서드 호출 비용 + 연산 비용이 합쳐서 무거움
+*/
 public class VowelsDictionary {
 	public static void main(String[] args) {
 

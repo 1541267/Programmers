@@ -1,4 +1,4 @@
-package programmers.highscorekit.greedy;
+package programmers.highscorekit.bruteForce;
 
 /*
 https://school.programmers.co.kr/learn/courses/30/lessons/87946?language=java
